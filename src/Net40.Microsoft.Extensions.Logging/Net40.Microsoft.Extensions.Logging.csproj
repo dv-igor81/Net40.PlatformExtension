@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{60C0E198-24C9-46B8-981F-413DAE152BBD}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace></RootNamespace>
+        <AssemblyName>Net40.Microsoft.Extensions.Logging</AssemblyName>
+        <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>11</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Microsoft.Extensions.DependencyInjection\LoggingServiceCollectionExtensions.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\DefaultLoggerLevelConfigureOptions.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\FilterLoggingBuilderExtensions.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\ILoggingBuilder.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\Logger.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\LoggerFactory.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\LoggerFilterOptions.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\LoggerFilterRule.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\LoggerInformation.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\LoggerRuleSelector.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\LoggingBuilder.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\LoggingBuilderExtensions.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\MessageLogger.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\ProviderAliasAttribute.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\ProviderAliasUtilities.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\ScopeLogger.cs" />
+        <Compile Include="Microsoft.Extensions.Logging\StaticFilterOptionsMonitor.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Net40.Theraot.Core\src\Net40.Theraot.Core\Net40.Theraot.Core.csproj">
+        <Project>{868d7589-87b6-47ad-8cc6-e4f856199ff2}</Project>
+        <Name>Net40.Theraot.Core</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.DependencyInjection.Abstractions\Net40.Microsoft.Extensions.DependencyInjection.Abstractions.csproj">
+        <Project>{078c84cd-4107-439c-82d0-3624544e89e2}</Project>
+        <Name>Net40.Microsoft.Extensions.DependencyInjection.Abstractions</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.DependencyInjection\Net40.Microsoft.Extensions.DependencyInjection.csproj">
+        <Project>{addde882-483b-46ba-8d87-9e5fe69d44e5}</Project>
+        <Name>Net40.Microsoft.Extensions.DependencyInjection</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Logging.Abstractions\Net40.Microsoft.Extensions.Logging.Abstractions.csproj">
+        <Project>{f0ecdf34-47a1-4b02-919c-3369477f16dc}</Project>
+        <Name>Net40.Microsoft.Extensions.Logging.Abstractions</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Options\Net40.Microsoft.Extensions.Options.csproj">
+        <Project>{89fe2a62-6d84-4281-86dc-83953f4eb84e}</Project>
+        <Name>Net40.Microsoft.Extensions.Options</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
+        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
+        <Name>Net40.System.Private.CoreLib</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{089DAE84-B6C6-4114-8684-D450582E446A}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace></RootNamespace>
+        <AssemblyName>Net40.Microsoft.Extensions.Hosting</AssemblyName>
+        <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>11</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\ApplicationLifetime.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\ConfigureContainerAdapter.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\ConsoleLifetime.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\Host.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\HostingEnvironment.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\HostingLoggerExtensions.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\IConfigureContainerAdapter.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\IServiceFactoryAdapter.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\LoggerEventIds.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting.Internal\ServiceFactoryAdapter.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting\ConsoleLifetimeOptions.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting\Host.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting\HostBuilder.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting\HostingHostBuilderExtensions.cs" />
+        <Compile Include="Microsoft.Extensions.Hosting\HostOptions.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Net40.Theraot.Core\src\Net40.Theraot.Core\Net40.Theraot.Core.csproj">
+        <Project>{868d7589-87b6-47ad-8cc6-e4f856199ff2}</Project>
+        <Name>Net40.Theraot.Core</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Configuration.Abstractions\Net40.Microsoft.Extensions.Configuration.Abstractions.csproj">
+        <Project>{a872ecc2-e8d5-4b78-a4ef-56d56dfacb40}</Project>
+        <Name>Net40.Microsoft.Extensions.Configuration.Abstractions</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Configuration.CommandLine\Net40.Microsoft.Extensions.Configuration.CommandLine.csproj">
+        <Project>{efc31461-888d-4c05-b9dd-89d4d514056a}</Project>
+        <Name>Net40.Microsoft.Extensions.Configuration.CommandLine</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Configuration.EnvironmentVariables\Net40.Microsoft.Extensions.Configuration.EnvironmentVariables.csproj">
+        <Project>{aba7b1c6-6a35-4866-aa54-36e183c92df6}</Project>
+        <Name>Net40.Microsoft.Extensions.Configuration.EnvironmentVariables</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Configuration.FileExtensions\Net40.Microsoft.Extensions.Configuration.FileExtensions.csproj">
+        <Project>{cec46392-e7b3-4c44-a28d-d9365bdc0baa}</Project>
+        <Name>Net40.Microsoft.Extensions.Configuration.FileExtensions</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Configuration.Json\Net40.Microsoft.Extensions.Configuration.Json.csproj">
+        <Project>{a5b87a69-32e6-474a-b7d3-328d47b693f3}</Project>
+        <Name>Net40.Microsoft.Extensions.Configuration.Json</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Configuration.UserSecrets\Net40.Microsoft.Extensions.Configuration.UserSecrets.csproj">
+        <Project>{e6727459-033e-4e2f-ad66-ea55daa23a9c}</Project>
+        <Name>Net40.Microsoft.Extensions.Configuration.UserSecrets</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Configuration\Net40.Microsoft.Extensions.Configuration.csproj">
+        <Project>{77f4bbf3-3b6f-4443-833e-976cc1f33658}</Project>
+        <Name>Net40.Microsoft.Extensions.Configuration</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.DependencyInjection.Abstractions\Net40.Microsoft.Extensions.DependencyInjection.Abstractions.csproj">
+        <Project>{078c84cd-4107-439c-82d0-3624544e89e2}</Project>
+        <Name>Net40.Microsoft.Extensions.DependencyInjection.Abstractions</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.DependencyInjection\Net40.Microsoft.Extensions.DependencyInjection.csproj">
+        <Project>{addde882-483b-46ba-8d87-9e5fe69d44e5}</Project>
+        <Name>Net40.Microsoft.Extensions.DependencyInjection</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.FileProviders.Abstractions\Net40.Microsoft.Extensions.FileProviders.Abstractions.csproj">
+        <Project>{4561bcc1-9405-456c-a6d9-3ffa3ebc5554}</Project>
+        <Name>Net40.Microsoft.Extensions.FileProviders.Abstractions</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.FileProviders.Physical\Net40.Microsoft.Extensions.FileProviders.Physical.csproj">
+        <Project>{5584109e-4200-4736-8517-bd339a233563}</Project>
+        <Name>Net40.Microsoft.Extensions.FileProviders.Physical</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Hosting.Abstractions\Net40.Microsoft.Extensions.Hosting.Abstractions.csproj">
+        <Project>{caf1427c-8912-46c0-accc-ecba8949e37e}</Project>
+        <Name>Net40.Microsoft.Extensions.Hosting.Abstractions</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Logging.Abstractions\Net40.Microsoft.Extensions.Logging.Abstractions.csproj">
+        <Project>{f0ecdf34-47a1-4b02-919c-3369477f16dc}</Project>
+        <Name>Net40.Microsoft.Extensions.Logging.Abstractions</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Logging.Configuration\Net40.Microsoft.Extensions.Logging.Configuration.csproj">
+        <Project>{110a3315-0cf9-4695-b3e0-9d631270a907}</Project>
+        <Name>Net40.Microsoft.Extensions.Logging.Configuration</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Logging.Console\Net40.Microsoft.Extensions.Logging.Console.csproj">
+        <Project>{6ee26b70-19e5-4652-8b69-703196acb3e6}</Project>
+        <Name>Net40.Microsoft.Extensions.Logging.Console</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Logging.Debug\Net40.Microsoft.Extensions.Logging.Debug.csproj">
+        <Project>{2038ec84-95bf-4fa8-a8b0-06f2cfaa7d67}</Project>
+        <Name>Net40.Microsoft.Extensions.Logging.Debug</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Logging.EventLog\Net40.Microsoft.Extensions.Logging.EventLog.csproj">
+        <Project>{9df67d79-53a6-4003-a540-f0b6f8a54764}</Project>
+        <Name>Net40.Microsoft.Extensions.Logging.EventLog</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Logging.EventSource\Net40.Microsoft.Extensions.Logging.EventSource.csproj">
+        <Project>{8f8890ce-9892-4c51-8557-e357fda07fa0}</Project>
+        <Name>Net40.Microsoft.Extensions.Logging.EventSource</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Logging\Net40.Microsoft.Extensions.Logging.csproj">
+        <Project>{60c0e198-24c9-46b8-981f-413dae152bbd}</Project>
+        <Name>Net40.Microsoft.Extensions.Logging</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.Microsoft.Extensions.Options\Net40.Microsoft.Extensions.Options.csproj">
+        <Project>{89fe2a62-6d84-4281-86dc-83953f4eb84e}</Project>
+        <Name>Net40.Microsoft.Extensions.Options</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
+        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
+        <Name>Net40.System.Private.CoreLib</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

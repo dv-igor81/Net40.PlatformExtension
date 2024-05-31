@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{7E512D8D-3B78-4548-872B-066E8903B6FE}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace></RootNamespace>
+        <AssemblyName>Net40.Microsoft.Extensions.FileSystemGlobbing</AssemblyName>
+        <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>11</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Abstractions\DirectoryInfoBase.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Abstractions\DirectoryInfoWrapper.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Abstractions\FileInfoBase.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Abstractions\FileInfoWrapper.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Abstractions\FileSystemInfoBase.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments\CurrentPathSegment.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments\LiteralPathSegment.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments\ParentPathSegment.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments\RecursiveWildcardSegment.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments\WildcardPathSegment.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts\PatternContext.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts\PatternContextLinear.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts\PatternContextLinearExclude.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts\PatternContextLinearInclude.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts\PatternContextRagged.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts\PatternContextRaggedExclude.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts\PatternContextRaggedInclude.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns\PatternBuilder.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal\ILinearPattern.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal\InMemoryFileInfo.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal\IPathSegment.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal\IPattern.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal\IPatternContext.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal\IRaggedPattern.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal\MatcherContext.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Internal\PatternTestResult.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing.Util\StringComparisonHelper.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing\FilePatternMatch.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing\InMemoryDirectoryInfo.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing\Matcher.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing\MatcherExtensions.cs" />
+        <Compile Include="Microsoft.Extensions.FileSystemGlobbing\PatternMatchingResult.cs" />
+        <Compile Include="Microsoft.Extensions.Internal\HashCodeCombiner.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Net40.Theraot.Core\src\Net40.Theraot.Core\Net40.Theraot.Core.csproj">
+        <Project>{868d7589-87b6-47ad-8cc6-e4f856199ff2}</Project>
+        <Name>Net40.Theraot.Core</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
