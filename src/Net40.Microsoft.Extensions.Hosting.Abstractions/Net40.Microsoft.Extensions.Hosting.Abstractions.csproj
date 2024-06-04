@@ -75,10 +75,6 @@
         <Project>{4561bcc1-9405-456c-a6d9-3ffa3ebc5554}</Project>
         <Name>Net40.Microsoft.Extensions.FileProviders.Abstractions</Name>
       </ProjectReference>
-      <ProjectReference Include="..\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
-        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
-        <Name>Net40.System.Private.CoreLib</Name>
-      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

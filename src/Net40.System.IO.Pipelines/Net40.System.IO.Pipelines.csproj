@@ -77,13 +77,13 @@
       <EmbeddedResource Include="Net40.System.IO.Pipelines.Resources.Strings.resx" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Net40.System.Private.CoreLib\src\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
+        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
+        <Name>Net40.System.Private.CoreLib</Name>
+      </ProjectReference>
       <ProjectReference Include="..\..\..\Net40.Theraot.Core\src\Net40.Theraot.Core\Net40.Theraot.Core.csproj">
         <Project>{868d7589-87b6-47ad-8cc6-e4f856199ff2}</Project>
         <Name>Net40.Theraot.Core</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
-        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
-        <Name>Net40.System.Private.CoreLib</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

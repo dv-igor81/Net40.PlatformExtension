@@ -142,13 +142,13 @@
         <Compile Include="System\Strings.cs" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Net40.System.Private.CoreLib\src\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
+        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
+        <Name>Net40.System.Private.CoreLib</Name>
+      </ProjectReference>
       <ProjectReference Include="..\..\..\Net40.Theraot.Core\src\Net40.Theraot.Core\Net40.Theraot.Core.csproj">
         <Project>{868d7589-87b6-47ad-8cc6-e4f856199ff2}</Project>
         <Name>Net40.Theraot.Core</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
-        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
-        <Name>Net40.System.Private.CoreLib</Name>
       </ProjectReference>
       <ProjectReference Include="..\Net40.System.Text.Encodings.Web\Net40.System.Text.Encodings.Web.csproj">
         <Project>{3de8e23f-bf0e-48a8-b4da-5d656a74187c}</Project>

@@ -53,6 +53,10 @@
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Net40.System.Private.CoreLib\src\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
+        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
+        <Name>Net40.System.Private.CoreLib</Name>
+      </ProjectReference>
       <ProjectReference Include="..\Net40.Microsoft.Extensions.DependencyInjection.Abstractions\Net40.Microsoft.Extensions.DependencyInjection.Abstractions.csproj">
         <Project>{078c84cd-4107-439c-82d0-3624544e89e2}</Project>
         <Name>Net40.Microsoft.Extensions.DependencyInjection.Abstractions</Name>
@@ -72,10 +76,6 @@
       <ProjectReference Include="..\Net40.Microsoft.Extensions.Options\Net40.Microsoft.Extensions.Options.csproj">
         <Project>{89fe2a62-6d84-4281-86dc-83953f4eb84e}</Project>
         <Name>Net40.Microsoft.Extensions.Options</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
-        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
-        <Name>Net40.System.Private.CoreLib</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

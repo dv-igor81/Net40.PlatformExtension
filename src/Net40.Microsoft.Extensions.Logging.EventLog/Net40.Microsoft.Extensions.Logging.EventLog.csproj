@@ -63,10 +63,6 @@
         <Project>{89fe2a62-6d84-4281-86dc-83953f4eb84e}</Project>
         <Name>Net40.Microsoft.Extensions.Options</Name>
       </ProjectReference>
-      <ProjectReference Include="..\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
-        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
-        <Name>Net40.System.Private.CoreLib</Name>
-      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

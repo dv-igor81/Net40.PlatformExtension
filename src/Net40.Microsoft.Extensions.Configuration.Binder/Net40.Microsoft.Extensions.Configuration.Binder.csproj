@@ -52,10 +52,6 @@
         <Project>{a872ecc2-e8d5-4b78-a4ef-56d56dfacb40}</Project>
         <Name>Net40.Microsoft.Extensions.Configuration.Abstractions</Name>
       </ProjectReference>
-      <ProjectReference Include="..\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
-        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
-        <Name>Net40.System.Private.CoreLib</Name>
-      </ProjectReference>
     </ItemGroup>
     <ItemGroup>
       <EmbeddedResource Include="Net40.Microsoft.Extensions.Configuration.Binder.Resources.resx" />

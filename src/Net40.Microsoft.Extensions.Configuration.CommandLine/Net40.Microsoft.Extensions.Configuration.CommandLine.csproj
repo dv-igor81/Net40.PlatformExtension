@@ -52,10 +52,6 @@
         <Project>{77f4bbf3-3b6f-4443-833e-976cc1f33658}</Project>
         <Name>Net40.Microsoft.Extensions.Configuration</Name>
       </ProjectReference>
-      <ProjectReference Include="..\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj">
-        <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
-        <Name>Net40.System.Private.CoreLib</Name>
-      </ProjectReference>
     </ItemGroup>
     <ItemGroup>
       <EmbeddedResource Include="Net40.Microsoft.Extensions.Configuration.CommandLine.Resources.resx" />

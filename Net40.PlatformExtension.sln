@@ -4,8 +4,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ECF1CBAC-A5A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencies", "{0B9B185B-AF38-4640-9ECB-C02BB46251F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net40.System.Private.CoreLib", "src\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj", "{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net40.Theraot.Core", "..\Net40.Theraot.Core\src\Net40.Theraot.Core\Net40.Theraot.Core.csproj", "{868D7589-87B6-47AD-8CC6-E4F856199FF2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net40.System.IO.Pipelines", "src\Net40.System.IO.Pipelines\Net40.System.IO.Pipelines.csproj", "{8989574A-B425-4D9A-AD08-E1104E05614E}"
@@ -64,16 +62,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net40.Microsoft.Extensions.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net40.Microsoft.Extensions.Hosting", "src\Net40.Microsoft.Extensions.Hosting\Net40.Microsoft.Extensions.Hosting.csproj", "{089DAE84-B6C6-4114-8684-D450582E446A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net40.System.Private.CoreLib", "..\Net40.System.Private.CoreLib\src\Net40.System.Private.CoreLib\Net40.System.Private.CoreLib.csproj", "{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{CC7E061A-633A-4EB0-B6D3-EBC5119ED0B2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{868D7589-87B6-47AD-8CC6-E4F856199FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{868D7589-87B6-47AD-8CC6-E4F856199FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{868D7589-87B6-47AD-8CC6-E4F856199FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -190,9 +191,12 @@ Global
 		{089DAE84-B6C6-4114-8684-D450582E446A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{089DAE84-B6C6-4114-8684-D450582E446A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{089DAE84-B6C6-4114-8684-D450582E446A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A} = {ECF1CBAC-A5AA-496F-8B6E-32FFB6618116}
 		{868D7589-87B6-47AD-8CC6-E4F856199FF2} = {0B9B185B-AF38-4640-9ECB-C02BB46251F7}
 		{8989574A-B425-4D9A-AD08-E1104E05614E} = {ECF1CBAC-A5AA-496F-8B6E-32FFB6618116}
 		{FBF58EF3-0667-4B4E-83D2-7F6316B82F5F} = {ECF1CBAC-A5AA-496F-8B6E-32FFB6618116}
@@ -222,5 +226,6 @@ Global
 		{9DF67D79-53A6-4003-A540-F0B6F8A54764} = {ECF1CBAC-A5AA-496F-8B6E-32FFB6618116}
 		{8F8890CE-9892-4C51-8557-E357FDA07FA0} = {ECF1CBAC-A5AA-496F-8B6E-32FFB6618116}
 		{089DAE84-B6C6-4114-8684-D450582E446A} = {ECF1CBAC-A5AA-496F-8B6E-32FFB6618116}
+		{0BE8AC03-9637-4BE1-8552-086BE1BDE21A} = {0B9B185B-AF38-4640-9ECB-C02BB46251F7}
 	EndGlobalSection
 EndGlobal
