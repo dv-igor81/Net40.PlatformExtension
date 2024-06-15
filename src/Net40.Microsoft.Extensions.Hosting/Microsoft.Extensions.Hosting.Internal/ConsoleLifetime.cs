@@ -95,7 +95,11 @@ public class ConsoleLifetime : IHostLifetime, IDisposable
 	{
 		_shutdownBlock.Set();
 		AppDomain.CurrentDomain.ProcessExit -= OnProcessExit;
-		Console.CancelKeyPress -= OnCancelKeyPress;
+		TaskEx.Run(() =>
+		{
+			Console.CancelKeyPress -= OnCancelKeyPress; // SerialIO - Ctrl+C --- здесь зависает
+			// поэтому запустим в другом потоке
+		});
 		_applicationStartedRegistration.Dispose();
 		_applicationStoppingRegistration.Dispose();
 	}

@@ -54,6 +54,14 @@
         <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
         <Name>Net40.System.Private.CoreLib</Name>
       </ProjectReference>
+      <ProjectReference Include="..\..\..\Net40.System.Private.CoreLib\src\Net40.System.Runtime.CompilerServices.Unsafe\Net40.System.Runtime.CompilerServices.Unsafe.csproj">
+        <Project>{cda957a4-cd1b-4f46-a878-63db84d1c4ad}</Project>
+        <Name>Net40.System.Runtime.CompilerServices.Unsafe</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\..\..\Net40.System.Private.CoreLib\src\Net40.System.Text.Json\Net40.System.Text.Json.csproj">
+        <Project>{fbf58ef3-0667-4b4e-83d2-7f6316b82f5f}</Project>
+        <Name>Net40.System.Text.Json</Name>
+      </ProjectReference>
       <ProjectReference Include="..\..\..\Net40.Theraot.Core\src\Net40.Theraot.Core\Net40.Theraot.Core.csproj">
         <Project>{868d7589-87b6-47ad-8cc6-e4f856199ff2}</Project>
         <Name>Net40.Theraot.Core</Name>
@@ -77,10 +85,6 @@
       <ProjectReference Include="..\Net40.Microsoft.Extensions.Primitives\Net40.Microsoft.Extensions.Primitives.csproj">
         <Project>{3eae2a4a-c7d6-4371-be2b-5a1d497afb60}</Project>
         <Name>Net40.Microsoft.Extensions.Primitives</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Net40.System.Text.Json\Net40.System.Text.Json.csproj">
-        <Project>{fbf58ef3-0667-4b4e-83d2-7f6316b82f5f}</Project>
-        <Name>Net40.System.Text.Json</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

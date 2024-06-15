@@ -62,6 +62,10 @@
         <Project>{0be8ac03-9637-4be1-8552-086be1bde21a}</Project>
         <Name>Net40.System.Private.CoreLib</Name>
       </ProjectReference>
+      <ProjectReference Include="..\..\..\Net40.System.Private.CoreLib\src\Net40.System.Runtime.CompilerServices.Unsafe\Net40.System.Runtime.CompilerServices.Unsafe.csproj">
+        <Project>{cda957a4-cd1b-4f46-a878-63db84d1c4ad}</Project>
+        <Name>Net40.System.Runtime.CompilerServices.Unsafe</Name>
+      </ProjectReference>
       <ProjectReference Include="..\..\..\Net40.Theraot.Core\src\Net40.Theraot.Core\Net40.Theraot.Core.csproj">
         <Project>{868d7589-87b6-47ad-8cc6-e4f856199ff2}</Project>
         <Name>Net40.Theraot.Core</Name>
